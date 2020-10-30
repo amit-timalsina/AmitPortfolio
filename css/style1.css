@@ -345,8 +345,10 @@ h6 {
 }
 
 .banner-wrapper {
+  overflow: hidden;
   position: relative;
   height: 100vh;
+  width: 100%;
   z-index: 1;
   background-position: center center;
   background-size: cover;
