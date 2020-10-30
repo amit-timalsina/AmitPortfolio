@@ -420,7 +420,6 @@ h6 {
       size: cover;
       repeat: no-repeat;
   };
-  // padding: 100px;
   &.banner-bg1 {
       background-image: url(../img/main-banner.png);
   }
@@ -1598,8 +1597,13 @@ How To Protect Area CSS
 // <------------------------------------------------------------------------------------------------------------------------>
 // responsive
 @media only #{$media} and ($feature_max : $value_two) {
-
-
+  .banner-wrapper {
+    height: auto;
+    padding: {
+        top: 180px;
+        bottom: 100px;
+    };
+  }
   .cert1{
     font-weight: bolder;
     font-size: 1em;
@@ -1956,6 +1960,13 @@ How To Protect Area CSS
 }
 
 @media only #{$media} and ($feature_min : $value_three) and ($feature_max : $value_four) {
+  .banner-wrapper {
+    height: auto;
+    padding: {
+        top: 200px;
+        bottom: 120px;
+    };
+  }
   .container {
     max-width: 720px;
   }

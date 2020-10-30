@@ -1667,6 +1667,11 @@ How To Protect Area CSS
 }
 
 @media only screen and (max-width: 767px) {
+  .banner-wrapper {
+    height: auto;
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
   .cert1 {
     font-weight: bolder;
     font-size: 1em;
@@ -1965,6 +1970,11 @@ How To Protect Area CSS
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-wrapper {
+    height: auto;
+    padding-top: 200px;
+    padding-bottom: 120px;
+  }
   .container {
     max-width: 720px;
   }
