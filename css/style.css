@@ -254,3 +254,7 @@ Flaticon icon font: Flaticon
 #staff{
   background: #4F87FB;
 }
+#gallery img{
+  height: 200px;
+  width: 300px;
+}
