@@ -359,52 +359,6 @@ h6 {
   background-image: url(../img/main-banner.png);
 }
 
-.banner-wrapper-content {
-  max-width: 600px;
-  margin-left: 0;
-  margin-top: 10em;
-}
-
-.banner-wrapper-content h1 {
-  color: #ffffff;
-  line-height: 1.3;
-  font-size: 50px;
-  font-weight: 800;
-  margin-bottom: 15px;
-}
-
-.banner-wrapper-content p {
-  color: #ffffff;
-  font-size: 16px;
-}
-
-.banner-wrapper-content .btn-box {
-  margin-top: 30px;
-}
-
-.banner-wrapper-content .btn-box .default-btn {
-  border-color: #4f87fb;
-}
-
-.banner-wrapper-content .btn-box .default-btn:hover {
-  color: #130947;
-  background-color: #ffffff;
-  border-color: #ffffff;
-}
-
-.banner-wrapper-content .btn-box .optional-btn {
-  margin-left: 15px;
-  color: #130947;
-  border-color: #ffffff;
-  background-color: #ffffff;
-}
-
-.banner-wrapper-content .btn-box .optional-btn:hover {
-  color: #ffffff;
-  border-color: #4f87fb;
-  background-color: #4f87fb;
-}
-
 /*================================================
 Footer Area CSS
 =================================================*/
