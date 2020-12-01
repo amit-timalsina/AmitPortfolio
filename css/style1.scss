@@ -1552,11 +1552,15 @@ How To Protect Area CSS
 // responsive
 @media only #{$media} and ($feature_max : $value_two) {
   .banner-wrapper {
-    height: auto;
+    height: 80vh;
     padding: {
-        top: 180px;
+        top: 130px;
         bottom: 100px;
     };
+  &.banner-bg1 {
+    object-position: center;
+    background-image: url(../img/main-banner.png);
+  }
   }
   .cert1{
     font-weight: bolder;
@@ -1889,16 +1893,27 @@ How To Protect Area CSS
       line-height: 65px;
   }
 }
-
+.title-personal {
+  width: 80%;
+  margin-left: 0%;
+  padding-left: 3em;
+}
 }
 
 @media only #{$media} and ($feature_min : $value_one) and ($feature_max : $value_two) {
+  .banner-wrapper {
+    height: 80vh;
+    padding: {
+        top: 180px;
+        bottom: 100px;
+    };
+  }
   .container {
     max-width: 540px;
   }
   .title-personal {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 0%;
 }
 .title-personal h1 {
     font-size: 60px;
@@ -1915,7 +1930,7 @@ How To Protect Area CSS
 
 @media only #{$media} and ($feature_min : $value_three) and ($feature_max : $value_four) {
   .banner-wrapper {
-    height: auto;
+    height: 80vh;
     padding: {
         top: 200px;
         bottom: 120px;

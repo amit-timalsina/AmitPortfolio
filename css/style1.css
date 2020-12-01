@@ -1622,9 +1622,14 @@ How To Protect Area CSS
 
 @media only screen and (max-width: 767px) {
   .banner-wrapper {
-    height: auto;
-    padding-top: 180px;
+    height: 80vh;
+    padding-top: 130px;
     padding-bottom: 100px;
+  }
+  .banner-wrapper.banner-bg1 {
+    -o-object-position: center;
+       object-position: center;
+    background-image: url(../img/main-banner.png);
   }
   .cert1 {
     font-weight: bolder;
@@ -1902,15 +1907,25 @@ How To Protect Area CSS
     font-size: 25px;
     line-height: 65px;
   }
+  .title-personal {
+    width: 80%;
+    margin-left: 0%;
+    padding-left: 3em;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .banner-wrapper {
+    height: 80vh;
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
   .container {
     max-width: 540px;
   }
   .title-personal {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 0%;
   }
   .title-personal h1 {
     font-size: 60px;
@@ -1925,7 +1940,7 @@ How To Protect Area CSS
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner-wrapper {
-    height: auto;
+    height: 80vh;
     padding-top: 200px;
     padding-bottom: 120px;
   }
