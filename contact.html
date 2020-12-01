@@ -16,6 +16,27 @@
   <link rel="stylesheet" href="css/animate.min.css" />
   <title>Amit Timalsina - CONTACT
   </title>
+  <script type="text/javascript">
+    function myswal() {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let phone = document.getElementById("phone").value;
+      let mes = document.getElementById("mes").value;
+      if (!(name && email && phone && mes)) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Something went wrong',
+          text: 'Check your input',
+        })
+      } else {
+        Swal.fire(
+          'Mail Sent!',
+          'Your message has been delivered',
+          'success'
+        )
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -69,7 +90,7 @@
               questions you may have.
             </p>
 
-            <form id="contactForm">
+            <form id="contactForm" action = 'mail.php' method="POST">
               <div class="row">
                 <div class="col-lg-12 col-md-6">
                   <div class="form-group">
@@ -88,7 +109,7 @@
                 <div class="col-lg-12 col-md-12">
                   <div class="form-group">
                     <label>Phone Number <span>*</span></label>
-                    <input type="text" name="phone_number" id="phone_number" class="form-control"
+                    <input type="text" name="phone" id="phone" class="form-control"
                       placeholder="Your phone number" />
                   </div>
                 </div>
@@ -96,14 +117,14 @@
                 <div class="col-lg-12 col-md-12">
                   <div class="form-group">
                     <label>Your Message <span>*</span></label>
-                    <textarea name="message" id="message" cols="30" rows="5" class="form-control"
+                    <textarea name="message" id="mes" cols="30" rows="5" class="form-control"
                       placeholder="Write your message..."></textarea>
                   </div>
                 </div>
 
                 <div class="col-lg-12 col-md-12">
                   <button type="submit" class="default-btn">
-                    <i class="flaticon-plane"></i> Send Message
+                    <i class="flaticon-plane" type="submit" value="Send" onclick="myswal()"></i> Send Message
                   </button>
                 </div>
               </div>
@@ -206,7 +227,7 @@
                 <li><a href='about.html'>About</a></li>
                 <li><a href='portfolio.html'>Portfolio</a></li>
                 <li><a href='#'>Contact</a></li>
-                <li><a href="/">YSC(Coming soon)</a></li>
+                <li><a href="https://ysc-nepal.org/">YSC</a></li>
               </ul>
             </div>
           </div>
