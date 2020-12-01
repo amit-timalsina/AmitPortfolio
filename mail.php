@@ -11,7 +11,7 @@ $email = $_POST["email"];
 $phone = $_POST["phone"];
 $mes = $_POST["message"];
 
-$email_to = "info.communityysc@gmail.com";
+$email_to = "amittimalsina14@gmail.com";
 
 $mail = new PHPMailer(true);
 
